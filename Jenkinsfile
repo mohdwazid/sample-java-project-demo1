@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'centos:8'
+      args 'label \'centos8\''
     }
 
   }
@@ -24,8 +25,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    label = 'centos8'
   }
 }
