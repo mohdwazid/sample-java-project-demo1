@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'centos8'
+    docker {
+      image 'centos:8'
     }
 
   }
@@ -24,5 +24,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    label = 'centos8'
   }
 }
