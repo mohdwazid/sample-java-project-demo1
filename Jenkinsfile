@@ -1,9 +1,8 @@
 pipeline {
   agent {
-    docker {
-      image 'centos:latest'
+    node {
       label 'centos8'
-    }   
+    }      
   }
   stages {
     stage('Clone GIT repo') {
