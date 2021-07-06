@@ -8,19 +8,19 @@ pipeline {
   stages {
     stage('Clone Git Repo') {
       steps {
-        sh 'sh "echo cloning git repository"'
+        sh 'echo Cloning git repository'
       }
     }
 
     stage('Build') {
       steps {
-        sh 'sh "echo Build start here"'
+        sh 'echo Build start here'
       }
     }
 
     stage('Deploy') {
       steps {
-        sh 'sh "echo Here start the deployment"'
+        sh 'echo Here start the deployment'
       }
     }
 
